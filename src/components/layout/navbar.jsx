@@ -1,6 +1,7 @@
 import { DownOutlined, BellOutlined } from '@ant-design/icons';
 // import  Logo from "../../assets/logo.png";
 import { Dropdown, Space } from 'antd';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const items = [
     {
@@ -44,8 +45,8 @@ const MainNavbar = () => {
                     <a href="/" className="hover:underline hover:text-purple-500">
                         Beranda
                     </a>
-                    <a href="/pusatPengetahuan" className="hover:underline hover:text-purple-500 relative">
-                        Pelatihan
+                    <a href="/keranjang" className="hover:underline hover:text-purple-500 relative">
+                    <AiOutlineShoppingCart className='text-xl'/>
                     </a>
                     <a href="" className='hover:text-purple-500'>
                         <Dropdown

@@ -2,10 +2,12 @@ import React from 'react'
 import Input from '../../InputLogin/Input'
 import dodle from '../../../assets/dodle.png'
 import TokoKu from '../../../assets/TokoKu.png'
+import Footer from '../footer'
 // import './style/Login.css'
 
 function Login() {
   return (
+    <div>
     <div className='flex flex-row-reverse justify-center m-12'>
       <div className=''>
         <div className='border border-slate-400 py-5 px-20 '>
@@ -22,6 +24,8 @@ function Login() {
         <div>
           <img src={dodle} alt="" className='w-[80%] mr-10 mt-10' />
         </div>
+    </div>
+    <Footer/>
     </div>
   )
 }
