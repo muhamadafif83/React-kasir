@@ -5,7 +5,7 @@ const MainFooter = () => {
 
     return (
         <div>
-            <footer className="shadow-md py-8 px-20 flex flex-col lg:flex-row justify-between justify-items-center bg-gray-400 text-white">
+            <footer className="shadow-md py-8 px-20 flex flex-col lg:flex-row justify-between justify-items-center bg-teal-400 text-stone-600">
                 {/* 5 About Sections */}
                 <div className="flex flex-col mb-4 lg:mb-0">
                     <h3 className="text-lg font-semibold">TokoKu</h3>
@@ -56,7 +56,7 @@ const MainFooter = () => {
                     </div>
                 </div>
             </footer>
-                <p className="text-center h-10 bg-gray-400 text-white">TokoKu Copyright Reserved</p>
+                <p className="text-center h-10 bg-teal-400 text-stone-600">TokoKu Copyright Reserved</p>
         </div>
     )
 }

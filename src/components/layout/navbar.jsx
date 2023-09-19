@@ -24,7 +24,7 @@ const items = [
 const MainNavbar = () => {
     return (
         <>
-            <nav className="text-md bg-500 py-5 px-20 flex justify-between items-center bg-cyan-400 shadow-md">
+            <nav className="text-md bg-500 py-5 px-20 flex justify-between items-center bg-teal-400 shadow-md">
                 {/* Logo Perusahaan */}
                 <div className="flex items-center"> {/* Wrap dalam flex container */}
                     {/* <img src={Logo} alt="Logo Nusa Learning" className="h-8" /> */}
@@ -42,13 +42,13 @@ const MainNavbar = () => {
 
                 {/* Link dengan Icon */}
                 <div className="flex space-x-10">
-                    <a href="/" className="hover:underline hover:text-purple-500">
+                    <a href="/" className="hover:underline hover:text-white hover:no-underline">
                         Beranda
                     </a>
-                    <a href="/keranjang" className="hover:underline hover:text-purple-500 relative">
+                    <a href="/keranjang" className="hover:underline hover:text-whote relative">
                     <AiOutlineShoppingCart className='text-xl'/>
                     </a>
-                    <a href="" className='hover:text-purple-500'>
+                    <a href="" className='hover:text-white'>
                         <Dropdown
                             menu={{
                                 items,
@@ -67,7 +67,7 @@ const MainNavbar = () => {
                     {/* <a href="#" className="hover:underline hover:text-purple-500">
                         <BellOutlined className='text-[20px]' />
                     </a> */}
-                    <a href="/login" className="hover:underline hover:text-purple-500">
+                    <a href="/login" className="hover:underline hover:text-white hover:no-underline">
                         Login
                     </a>
                 </div>
