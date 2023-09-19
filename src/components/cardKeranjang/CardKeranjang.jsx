@@ -1,28 +1,28 @@
 import React from 'react';
 
-    // const items = [
-    //   {
-    //     imgUrl: "https://via.placeholder.com/300",
-    //     productName: "Handphone",
-    //     price: "Rp.2.500.000",
-    //   },
-    //   {
-    //     imgUrl: "https://via.placeholder.com/300",
-    //     productName: "Laptop",
-    //     price: "Rp.15.000.000",
-    //   },
-    //   {
-    //     imgUrl: "https://via.placeholder.com/300",
-    //     productName: "Tahu Qeju",
-    //     price: "Rp.900 /biji",
-    //   },
-    //   {
-    //     imgUrl: "https://via.placeholder.com/300",
-    //     productName: "Tahu Putih",
-    //     bebas: "jj",
-    //     price: "Rp.500 /biji",
-    //   },
-    // ];
+    const items = [
+      {
+        imgUrl: "https://via.placeholder.com/300",
+        productName: "Handphone",
+        price: "Rp.2.500.000",
+      },
+      {
+        imgUrl: "https://via.placeholder.com/300",
+        productName: "Laptop",
+        price: "Rp.15.000.000",
+      },
+      {
+        imgUrl: "https://via.placeholder.com/300",
+        productName: "Tahu Qeju",
+        price: "Rp.900 /biji",
+      },
+      {
+        imgUrl: "https://via.placeholder.com/300",
+        productName: "Tahu Putih",
+        bebas: "jj",
+        price: "Rp.500 /biji",
+      },
+    ];
 
     import {
         Card,
@@ -34,14 +34,16 @@ import React from 'react';
        
       export function CardKeranjang() {
         return (
-          <Card className="w-full max-w-[48rem] flex-row">
+          <div>
+          {items.map((item, index) => (
+          <Card key={index} className="w-auto h-auto max-w-[110%] flex-row my-10">
             <CardHeader
               shadow={false}
               floated={false}
-              className="m-0 w-2/5 shrink-0 rounded-r-none"
+              className="m-0 w-[50%] shrink-0 rounded-r-none"
             >
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                src={item.imgUrl}
                 alt="card-image"
                 className="h-full w-full object-cover"
               />
@@ -50,14 +52,11 @@ import React from 'react';
               <Typography variant="h6" color="gray" className="mb-4 uppercase">
                 startups
               </Typography>
-              <Typography variant="h4" color="blue-gray" className="mb-2">
-                Lyft launching cross-platform service this week
+              <Typography variant="h4" color="blue-gray" className="mb-2 text-center">
+              {item.productName}
               </Typography>
               <Typography color="gray" className="mb-8 font-normal">
-                Like so many organizations these days, Autodesk is a company in
-                transition. It was until recently a traditional boxed software company
-                selling licenses. Yet its own business model disruption is only part
-                of the story
+              {item.price}
               </Typography>
               <a href="#" className="inline-block">
                 <Button variant="text" className="flex items-center gap-2">
@@ -80,5 +79,7 @@ import React from 'react';
               </a>
             </CardBody>
           </Card>
-        );
-      }
+          ))}
+        </div>
+          );
+        }
