@@ -26,7 +26,7 @@ function Keranjang() {
         <CardKeranjang/>
         </div>
         <div>
-        <Card className="my-10 w-96 border border-black">
+        <Card className="my-10 mx-10 w-96 border border-black">
       <CardBody>
         <div>
         <Typography variant="h5" color="blue-gray" className="p-1 w-[50%] flex justify-start">

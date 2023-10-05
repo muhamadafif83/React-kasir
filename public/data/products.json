@@ -8,8 +8,15 @@
             "desc": "laptop murah dan merakyat"
         },
         {
-            "nama": "Laptop",
-            "urlPoster": "https://id-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/M/4/M4Y46PA-1_T1678974073.png",
+            "nama": "Handphone",
+            "urlPoster": "https://i02.appmifile.com/603_operator_sg/29/03/2023/08fcd3c7c02db65ad7ea46a5b17b64ed.png",
+            "price": 5000000,
+            "stock": 5,
+            "desc": "laptop murah dan merakyat"
+        },
+        {
+            "nama": "Handphone",
+            "urlPoster": "https://i02.appmifile.com/603_operator_sg/29/03/2023/08fcd3c7c02db65ad7ea46a5b17b64ed.png",
             "price": 5000000,
             "stock": 5,
             "desc": "laptop murah dan merakyat"
