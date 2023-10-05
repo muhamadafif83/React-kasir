@@ -3,7 +3,6 @@ import { Textarea } from "@material-tailwind/react";
 import { Radio } from 'antd'
 import MainNavbar from '../navbar'
 import MainFooter from '../mainFooter'
-import { CardKeranjang } from '../../cardKeranjang/CardKeranjang'
 import {
   Card,
   CardBody,
@@ -11,6 +10,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { CardKeranjang } from '../../cardKeranjang/CardKeranjang';
 
 function Keranjang() {
   return (
@@ -22,11 +22,11 @@ function Keranjang() {
           <div className='bg-gray-400 w-32 rounded-lg'></div>
           </div>
         <div className='flex flex-row '>
-        <div className='flex ml-32 pb-12'>
+        <div className='flex ml-10 pb-12'>
         <CardKeranjang/>
         </div>
         <div>
-        <Card className="my-10 w-96 mx-[65%] border border-black">
+        <Card className="my-10 w-96 border border-black">
       <CardBody>
         <div>
         <Typography variant="h5" color="blue-gray" className="p-1 w-[50%] flex justify-start">
@@ -65,7 +65,7 @@ function Keranjang() {
         </div>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button className='w-[50%]'>Buat Pesanan</Button>
+       <a href="/pesanan"> <Button className='w-[50%]'>Buat Pesanan</Button></a>
       </CardFooter>
     </Card>
         </div>
